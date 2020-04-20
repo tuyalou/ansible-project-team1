@@ -9,4 +9,4 @@
       vpc_id: "{{vpc_id}}"
       state: state
       tags: 
-        Name: "IGW"
+        Name: "IGW" 

@@ -1,7 +1,7 @@
 ---
 - hosts: localhost
-  vars_files: 
-  - route_info.yaml
+  # vars_files: 
+  # - route_info.yaml
   tasks: 
   - name: Set up public subnet route table
     ec2_vpc_route_table:
@@ -16,7 +16,7 @@
       routes:
         - dest: 0.0.0.0/0
           gateway_id: "{{igw.gateway_id}}"
-    register: public_route_table
+ 
 
   - name: Set up NAT-protected route table
     ec2_vpc_route_table:
@@ -31,4 +31,4 @@
       routes:
         - dest: 0.0.0.0/0
           instance_id: "{{nat.instance_id}}"
-    register: nat_route_table
+ 

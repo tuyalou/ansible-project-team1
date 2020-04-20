@@ -7,4 +7,4 @@
       ec2_vpc_nat_gateway:
         region: "{{region}}"
         subnet_id: "{{subnet_id}}"
-        state: state
+        state: state 

@@ -18,4 +18,4 @@
       state: present
       region: "{{region}}"
       vpc_id: "{{vpc_id}}"
-      cidr: "{{cidr}}"
+      cidr: "{{cidr}}" 
