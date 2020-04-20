@@ -1,4 +1,7 @@
+<<<<<<< HEAD
 
+=======
+>>>>>>> 64982271b71c7acecf05c04a07561cb2719c8a52
 vpc_id: "vpc-0ff6c647d438b4156"
 region: "us-east-1"
 public_subnet_1: "subnet-05d8efd0583e58ffe"
@@ -10,5 +13,8 @@ private_subnet_1: "subnet-02e5b033efa1f745d"
 private_subnet_2: "subnet-069bf55cb63946906"
 private_subnet_3: "subnet-0f987e4ec6cdcd9c7"
 nat.instance_id:  "nat-01112e2eb127216aa"
+<<<<<<< HEAD
 
 
+=======
+>>>>>>> 64982271b71c7acecf05c04a07561cb2719c8a52
