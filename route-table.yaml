@@ -1,7 +1,7 @@
 ---
 - hosts: localhost
-  # vars_files: 
-  # - route_info.yaml
+  vars_files: 
+  - route_info.yaml
   tasks: 
   - name: Set up public subnet route table
     ec2_vpc_route_table:
