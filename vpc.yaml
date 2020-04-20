@@ -1,10 +1,10 @@
 ---
-- name: Playbook for VPC
+- name: Creates VPC
   hosts: localhost
   tasks:
-  - name: Create a VPC
+  - name: Creates VPC
     ec2_vpc_net:
-      name: Team-1
+      name: VPC_project_team1
       cidr_block: 10.10.0.0/16
       region: us-east-1
       state: present

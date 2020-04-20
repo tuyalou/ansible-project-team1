@@ -6,16 +6,18 @@
       state: present
       region: us-east-1
       vpc_id: vpc-0ff6c647d438b4156
-      cidr: 10.10.1.0/24
+      cidr: 10.10.11.0/24
+
   - name: Create Public Subnet2
     ec2_vpc_subnet:
       state: present
       region: us-east-1
       vpc_id: vpc-0ff6c647d438b4156
-      cidr: 
+      cidr: 10.10.12.0/24
+
   - name: Create Public Subnet3
     ec2_vpc_subnet:
       state: present
       region: us-east-1
       vpc_id: vpc-0ff6c647d438b4156
-      cidr: 
+      cidr: 10.10.13.0/24
