@@ -8,6 +8,6 @@
     ec2_vpc_net:
       name: VPC_project_Team
       cidr_block: "{{cidr_block}}"
-      region: "{{regios}}"
+      region: "{{region}}"
       state: present
  
