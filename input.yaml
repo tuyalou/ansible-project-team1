@@ -1,4 +1,4 @@
-vpc_id: "vpc id"
+vpc_id: "vpc_id"
 region: "region"
 public_subnet_1: "public_subnet_1"
 public_subnet_2: "public_subnet_2"
