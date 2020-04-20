@@ -7,7 +7,7 @@
   - name: Creates VPC
     ec2_vpc_net:
       name: VPC_project_Team
-      cidr_block: "{{cidr}}"
+      cidr: "{{cidr}}"
       region: "{{region}}"
       state: present
  
