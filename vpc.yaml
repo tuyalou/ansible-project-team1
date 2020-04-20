@@ -1,6 +1,8 @@
 ---
 - name: Creates VPC
   hosts: localhost
+  vars_files: 
+  - input.yaml
   tasks:
   - name: Creates VPC
     ec2_vpc_net:
