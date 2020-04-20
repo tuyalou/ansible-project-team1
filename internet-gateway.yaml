@@ -5,8 +5,8 @@
   tasks:
   - name: Creates IGW 
     ec2_vpc_igw:
-      region: "us-east-1"
-      vpc_id: "vpc-0ff6c647d438b4156"
-      state: present
+      region: "{{region}}"
+      vpc_id: "{{vpc_id}}"
+      state: state
       tags: 
         Name: "IGW"

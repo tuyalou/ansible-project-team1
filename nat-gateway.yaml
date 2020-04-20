@@ -3,9 +3,8 @@
   hosts: localhost
   gather_facts: yes
   tasks:
-    
     - name: Creates NAT Gateway
       ec2_vpc_nat_gateway:
-        region: "us-east-1"
-        subnet_id: "subnet-05d8efd0583e58ffe"
-        state: present
+        region: "{{region}}"
+        subnet_id: "{{subnet_id}}"
+        state: state
