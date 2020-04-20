@@ -1,0 +1,21 @@
+---
+- hosts: localhost
+  tasks: 
+  - name: Create Public Subnet1
+    ec2_vpc_subnet:
+      state: present
+      region: us-east-1
+      vpc_id: vpc-0ff6c647d438b4156
+      cidr: 10.10.1.0/24
+  - name: Create Public Subnet2
+    ec2_vpc_subnet:
+      state: present
+      region: us-east-1
+      vpc_id: vpc-0ff6c647d438b4156
+      cidr: 
+  - name: Create Public Subnet3
+    ec2_vpc_subnet:
+      state: present
+      region: us-east-1
+      vpc_id: vpc-0ff6c647d438b4156
+      cidr: 
