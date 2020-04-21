@@ -1,5 +1,10 @@
 ---
-- hosts: localhost
+- name: Playbook for Subnets
+  hosts: localhost
+  gather_facts: no
+  vars_files:
+    - input.yaml
+    
   tasks: 
   - name: Create Public Subnet1
     ec2_vpc_subnet:
