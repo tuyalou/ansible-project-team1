@@ -19,6 +19,8 @@
 - name: Create  Nat Gateway
   include: nat-gateway.yaml
 
+- name: Create RT
+  include: route-table-priv.yaml
 
 - name: Create RT
-  include: route-table.yaml
+  include: route-table-pub.yaml

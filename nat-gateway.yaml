@@ -12,6 +12,6 @@
       ec2_vpc_nat_gateway:
         region: "{{region}}"
         subnet_id: "{{Pub_Subnet1.subnet.id}}"
-        allocation_id: eipalloc-0158103064a187904
+        # allocation_id: eipalloc-0158103064a187904
         state: present
   

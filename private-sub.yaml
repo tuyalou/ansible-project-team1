@@ -34,7 +34,7 @@
         cidr: "{{Private_cidr2}}"
         resource_tags:
           Name: Priv Subnet1
-      register: Priv_Subnet1
+      register: Priv_Subnet2
         
 
     - name: Create Private Subnet 3
@@ -45,5 +45,5 @@
         cidr: "{{Private_cidr3}}"
         resource_tags:
           Name: Priv Subnet1
-      register: Priv_Subnet1
+      register: Priv_Subnet3
         
