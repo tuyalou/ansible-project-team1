@@ -4,7 +4,7 @@
   hosts: localhost
   gather_facts: no
   vars_files:
-    - region
+    - region.yaml
   ignore_errors: yes
   tasks:
     - name: Collect VPC info
@@ -24,7 +24,7 @@
         cidr: "{{Private_cidr1}}"
         resource_tags:
           Name: Priv Subnet1
-      register: Priv_subnet1
+      register: Priv_Subnet1
 
     - name: Create Private Subnet 2
       ec2_vpc_subnet:
@@ -34,7 +34,7 @@
         cidr: "{{Private_cidr2}}"
         resource_tags:
           Name: Priv Subnet1
-      register: Priv_subnet1
+      register: Priv_Subnet1
         
 
     - name: Create Private Subnet 3
@@ -45,5 +45,5 @@
         cidr: "{{Private_cidr3}}"
         resource_tags:
           Name: Priv Subnet1
-      register: Priv_subnet1
+      register: Priv_Subnet1
         

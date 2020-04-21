@@ -3,7 +3,7 @@
   hosts: localhost
   gather_facts: no
   vars_files:
-    - region
+    - region.yaml
   ignore_errors: yes
 
   tasks:

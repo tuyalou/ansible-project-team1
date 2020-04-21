@@ -2,7 +2,7 @@
 - name: Creates VPC
   hosts: localhost
   vars_files: 
-  - region
+  - region.yaml
   tasks:
   - name: Creates VPC
     ec2_vpc_net:
