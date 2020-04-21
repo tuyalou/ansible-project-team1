@@ -1,6 +1,8 @@
-vpc_id: "vpc-0ff6c647d438b4156"
-vpc_cidr: "10.10.0.0/16"
 region: "us-east-1"
+vpc_cidr: "10.10.0.0/16"
+#vpc_id: "vpc-0ff6c647d438b4156"
+
+
 public_subnet_1: "subnet-05d8efd0583e58ffe"
 public_subnet_2: "subnet-001b42a0ab49cdb65"
 public_subnet_3: "subnet-0703c2f36273f4c46"
