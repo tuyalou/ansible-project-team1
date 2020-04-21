@@ -2,7 +2,7 @@
 - name: Creates VPC
   hosts: localhost
   vars_files: 
-  - input.yaml
+  - region
   tasks:
   - name: Creates VPC
     ec2_vpc_net:
@@ -10,4 +10,6 @@
       cidr_block: "{{vpc_cidr}}"
       region: "{{region}}"
       state: present
- 
+      tags:
+          Class: Ansible
+          Task: VPC

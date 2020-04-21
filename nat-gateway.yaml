@@ -2,9 +2,47 @@
 - name: Playbook for VPC
   hosts: localhost
   gather_facts: yes
+  
+  vars_files:
+    - region
+  ignore_errors: yes
+
   tasks:
-    - name: Creates NAT Gateway
+
+    - name: Collect VPC info
+      ec2_vpc_net_facts:
+        region: "{{region}}"
+        filters:
+          "tag:Task": VPC
+      register: VPC1
+
+    - name: Create NAT Gateway
       ec2_vpc_nat_gateway:
         region: "{{region}}"
-        subnet_id: "{{subnet_id}}"
-        state: state 
+        subnet_id: "{{Public_cidr1}}"
+        # vpc_id: "{{VPC1.vpcs[0].id}}"
+        state: present
+        wait: yes
+
+# ---
+# - name: Playbook for VPC
+#   hosts: localhost
+#   gather_facts: no
+#   vars_files:
+#     - region
+#   ignore_errors: yes
+
+#   tasks:
+#     - name: Collect VPC info
+#       ec2_vpc_net_facts:
+#         region: "{{region}}"
+#         filters:
+#           "tag:Task": VPC
+#       register: VPC1
+
+#     - name: create IGW 
+#       ec2_vpc_igw:
+#         region: "{{region}}"
+#         vpc_id: "{{VPC1.vpcs[0].id}}"
+#         state: present
+#       register: igw
