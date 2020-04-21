@@ -1,5 +1,6 @@
 region: "us-east-1"
 vpc_cidr: "10.10.0.0/16"
+vpc_name: "Team1-Project"
 #vpc_id: "vpc-0ff6c647d438b4156"
 
 
