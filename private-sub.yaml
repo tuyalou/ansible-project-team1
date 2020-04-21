@@ -15,7 +15,6 @@
       register: VPC1
 
 
-
     - name: Create Private Subnet 1
       ec2_vpc_subnet:
         state: present
