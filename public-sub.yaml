@@ -5,17 +5,19 @@
     ec2_vpc_subnet:
       state: present
       region: "{{region}}"
-      vpc_id: "{{vpc_id}}"
-      cidr: "{{cidr}}"
+      vpc_id: "{{VPC1.vpcs[0].vpc_id}}"
+      cidr: "{{Public_cidr1}}"
+      
   - name: Create Public Subnet2
     ec2_vpc_subnet:
       state: present
       region: "{{region}}"
-      vpc_id: "{{vpc_id}}"
-      cidr: "{{cidr}}"
+      vpc_id: "{{VPC1.vpcs[0].vpc_id}}"
+      cidr: "{{Public_cidr2}}"
+      
   - name: Create Public Subnet3
     ec2_vpc_subnet:
       state: present
       region: "{{region}}"
-      vpc_id: "{{vpc_id}}"
-      cidr: "{{cidr}}" 
+      vpc_id: "{{VPC1.vpcs[0].vpc_id}}"
+      cidr: "{{Public_cidr3}}" 
